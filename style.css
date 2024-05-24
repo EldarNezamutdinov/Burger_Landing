@@ -1,87 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-body{
+body {
 	margin: 0;
 	font-family: "Roboto", sans-serif;
 	background-color: #1C1C1C;
 	color: #fff;
 }
 
-img{
+img {
 	max-width: 100%;
 }
 
-a{
+a {
 	color: #fff;
 	text-decoration: none;
 }
 
-p{
+p {
 	margin: 0;
 }
 
-p + P{
+p+p {
 	margin-top: 15px;
 }
 
-ul{
+ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-weight: 500;
 	margin: 0;
 }
 
-.container{
+.container {
 	box-sizing: border-box;
-	max-width: 1140px;
+	max-width: 1170px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
-.header{
+.header {
 	padding: 25px 0;
 	position: relative;
 	z-index: 10;
 }
 
-.header .container{
+.header .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.header__logo{
-
-}
-
-.header__nav{
-
-}
-
-.header__list{
+.header__list {
 	display: flex;
 	gap: 30px;
 }
 
-.header__nav a{
+.header__nav a {
 	font-size: 14px;
 	opacity: 0.7;
 	transition: opacity 0.3s;
 }
 
-.header__nav a:hover{
+.header__nav a:hover {
 	opacity: 0.9;
 }
 
-.header__nav a.active{
+.header__nav a.active {
 	opacity: 1;
 }
 
-.btn{
+.btn {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -99,17 +96,13 @@ h1, h2, h3, h4, h5, h6{
 	transition: opacity 0.3s;
 }
 
-.btn:hover{
+.btn:hover {
 	opacity: 0.9;
 }
 
-.main {
-	
-}
+/* Приветственная секция *********************************************** */
 
-/* Приветственная секция */
- 
-.welcome{
+.welcome {
 	height: 100vh;
 	box-sizing: border-box;
 
@@ -122,7 +115,7 @@ h1, h2, h3, h4, h5, h6{
 	background-position: center;
 }
 
-.welcome__text{
+.welcome__text {
 	width: 550px;
 }
 
@@ -142,10 +135,7 @@ h1, h2, h3, h4, h5, h6{
 	opacity: 0.7;
 }
 
-.btn {
-
-}
-.food-list{
+.food-list {
 	padding: 100px 0;
 }
 
@@ -189,53 +179,206 @@ h1, h2, h3, h4, h5, h6{
 
 /*- Order */
 
-.order{
+.order {
 	background: #312F30;
 	padding: 60px 0;
 }
 
-.order__title{
+.order__title {
 	margin-bottom: 25px;
 	font-size: 44px;
 }
 
-.order__desc{
+.order__desc {
 	margin-bottom: 15px;
 	opacity: 0.7;
 }
 
-.order__price{
+.order__price {
 	font-weight: 500;
 	font-size: 20px;
 	letter-spacing: 0.1em;
 	color: #F6762C;
 }
 
-.order__price--old{
+.order__price--old {
 	font-size: 16px;
 	opacity: 0.5;
 	text-decoration: line-through;
 }
 
-.order .btn{
+.order .btn {
 	margin-top: 10px;
 }
 
-.order__price + .order__price{
+.order__price+.order__price {
 	margin-left: 3px;
 }
 
-.order .container{
+.order .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-right: 100px;
+	padding-right: 90px;
 }
 
-.order__img{
+.order__img {
 	max-width: 470px;
 }
 
-.order__text{
+.order__text {
 	max-width: 360px;
+}
+
+/* Product *********************************************	*/
+
+.product {
+	padding: 150px 0 150px 0;
+}
+
+.product .container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+}
+
+.product__card {
+	box-sizing: border-box;
+
+	width: 555px;
+	min-height: 300px;
+
+	padding: 60px 30px 60px 290px;
+	background-color: #4b3a3a;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.product__card:nth-child(even) {
+	padding-left: 30px;
+	padding-right: 290px;
+}
+
+.product__title {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.product__desc {
+	opacity: 0.7;
+	margin-bottom: 10px;
+}
+
+.product__price {
+	font-weight: 500;
+	color: #F6762C;
+}
+
+.product__price--old {
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+.btn--small {
+	width: 140px;
+	height: 40px;
+	font-size: 12px;
+}
+
+.product .btn {
+	margin-top: 10px;
+}
+
+.product__price+.product__price {
+	margin-left: 5px;
+}
+
+.card-queen {
+	background-image: url("images/product-1.jpg");
+}
+
+.card-hut {
+	background-image: url("images/product-2.jpg");
+}
+
+.card-king {
+	background-image: url("images/product-3.jpg");
+}
+
+.card-papa {
+	background-image: url("images/product-4.jpg");
+}
+
+
+/* feedback */
+
+.feedback{
+	padding-bottom: 200px;
+}
+
+.feedback .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/*max-width: 880px;*/
+}
+
+.feedback__img {
+
+}
+
+.feedback__text {
+	margin: 0;
+	text-align: center;
+	width: 370px;
+	
+	/*display: flex;
+	flex-direction: column;*/
+}
+
+.feedback__text::before{
+	content: url("./images/icons/quote.svg");
+}
+
+.feedback__desc {
+	opacity: 0.7;
+	margin: 30px 0;
+
+}
+
+.feedback__author {
+	font-weight: 500;
+	font-style: normal;
+	font-size: 24px;
+}
+
+.feedback__subauthor {
+	font-weight: 500;
+	font-size: 12px;
+	opacity: 0.7;
+
+	display: block;
+}
+
+/* Download */
+
+.download {
+	padding: 69px 0;
+	background: #312f30;
+}
+
+.download .container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.download__title {
+	font-weight: 500;
+	font-size: 40px;
+}
+
+.btn {
+
 }
